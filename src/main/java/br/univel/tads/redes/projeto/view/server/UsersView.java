@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.border.EmptyBorder;
 import java.awt.GridBagLayout;
 import javax.swing.JList;
@@ -23,9 +24,9 @@ public class UsersView extends JFrame {
 	private JLabel lblEmail;
 	private JTextField tf_;
 	private JLabel lblSenha;
-	private JTextField tf_senha;
+	private JPasswordField tf_senha;
 	private JLabel lblconfirmacaoSenha;
-	private JTextField tf_confirmacaoSenha;
+	private JPasswordField tf_confirmacaoSenha;
 	private JButton btnSalvar;
 
 	/**
@@ -124,7 +125,7 @@ public class UsersView extends JFrame {
 		gbc_lblSenha.gridy = 4;
 		panel.add(lblSenha, gbc_lblSenha);
 		
-		tf_senha = new JTextField();
+		tf_senha = new JPasswordField();
 		GridBagConstraints gbc_tf_senha = new GridBagConstraints();
 		gbc_tf_senha.insets = new Insets(0, 0, 5, 0);
 		gbc_tf_senha.fill = GridBagConstraints.HORIZONTAL;
@@ -140,7 +141,7 @@ public class UsersView extends JFrame {
 		gbc_lblconfirmacaoSenha.gridy = 6;
 		panel.add(lblconfirmacaoSenha, gbc_lblconfirmacaoSenha);
 		
-		tf_confirmacaoSenha = new JTextField();
+		tf_confirmacaoSenha = new JPasswordField();
 		GridBagConstraints gbc_tf_confirmacaoSenha = new GridBagConstraints();
 		gbc_tf_confirmacaoSenha.insets = new Insets(0, 0, 5, 0);
 		gbc_tf_confirmacaoSenha.fill = GridBagConstraints.HORIZONTAL;
