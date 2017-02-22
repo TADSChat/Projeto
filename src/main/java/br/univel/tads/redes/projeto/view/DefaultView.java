@@ -10,6 +10,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JMenu;
 import java.awt.CardLayout;
+import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JSeparator;
 
 public class DefaultView extends JFrame {
 
@@ -44,6 +46,15 @@ public class DefaultView extends JFrame {
 		
 		JMenu mnArquivo = new JMenu("Arquivo");
 		menuBar.add(mnArquivo);
+		
+		JRadioButtonMenuItem radioOn = new JRadioButtonMenuItem("Online");
+		mnArquivo.add(radioOn);
+		
+		JRadioButtonMenuItem radioOff = new JRadioButtonMenuItem("Offline");
+		mnArquivo.add(radioOff);
+		
+		JSeparator separator = new JSeparator();
+		mnArquivo.add(separator);
 		
 		JMenuItem mntmAlterarDados = new JMenuItem("Alterar Dados");
 		mnArquivo.add(mntmAlterarDados);

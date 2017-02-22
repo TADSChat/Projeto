@@ -28,6 +28,7 @@ public class UsersView extends JFrame {
 	private JLabel lblconfirmacaoSenha;
 	private JPasswordField tf_confirmacaoSenha;
 	private JButton btnSalvar;
+	private JButton btnNovo;
 
 	/**
 	 * Launch the application.
@@ -81,9 +82,9 @@ public class UsersView extends JFrame {
 		contentPane.add(panel, gbc_panel);
 		GridBagLayout gbl_panel = new GridBagLayout();
 		gbl_panel.columnWidths = new int[]{0, 0};
-		gbl_panel.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		gbl_panel.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		gbl_panel.columnWeights = new double[]{1.0, Double.MIN_VALUE};
-		gbl_panel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gbl_panel.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		panel.setLayout(gbl_panel);
 		
 		lblNome = new JLabel("Nome");
@@ -152,10 +153,18 @@ public class UsersView extends JFrame {
 		
 		btnSalvar = new JButton("Salvar");
 		GridBagConstraints gbc_btnSalvar = new GridBagConstraints();
+		gbc_btnSalvar.insets = new Insets(0, 0, 5, 0);
 		gbc_btnSalvar.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnSalvar.gridx = 0;
 		gbc_btnSalvar.gridy = 8;
 		panel.add(btnSalvar, gbc_btnSalvar);
+		
+		btnNovo = new JButton("Novo");
+		GridBagConstraints gbc_btnNovo = new GridBagConstraints();
+		gbc_btnNovo.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNovo.gridx = 0;
+		gbc_btnNovo.gridy = 9;
+		panel.add(btnNovo, gbc_btnNovo);
 	}
 
 }
